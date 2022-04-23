@@ -59,7 +59,7 @@ var frases = [
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('jhon')
-		.setDescription('Replies with Pong!'),
+		.setDescription('Gera frase do Jhon!'),
 	async execute(interaction) {
 		let i = Math.floor(Math.random() * frases.length)
 		await interaction.reply(frases[i]);
